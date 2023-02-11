@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guide_20"
+    tools:context=".MainActivity">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:layout_above="@+id/bottombar"/>
+
+    <LinearLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        tools:targetApi="lollipop"
+        android:layout_alignParentBottom="true">
+        
+        
+            <LinearLayout
+                android:id="@+id/guideLayout"
+                android:background="@drawable/round_back_guide_100"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_height="50dp">
+                
+                <ImageView
+                    android:id="@+id/guideImage"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_guide_selected" />
+                
+                <TextView
+                    android:id="@+id/guideTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guide"
+                    android:textStyle="bold"
+                    android:textColor="@color/guide"
+                    android:layout_marginStart="10dp"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mapLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/mapImage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_map_selected" />
+
+            <TextView
+                android:id="@+id/mapTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textStyle="bold"
+                android:textColor="@color/guide"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hazardLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/hazardImage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_hazard_selected" />
+
+            <TextView
+                android:id="@+id/hazardTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hazard"
+                android:textStyle="bold"
+                android:textColor="@color/hazard"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactsLayout"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/contactsImage"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_contacts_selected" />
+
+            <TextView
+                android:id="@+id/contactsTxt"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacts"
+                android:textStyle="bold"
+                android:textColor="@color/contacts"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+</RelativeLayout>
